@@ -4,6 +4,46 @@
 
 /* main */
 
+.content{
+  margin: 0 auto;
+}
+
+.profileList{
+  margin: 0 auto;
+}
+
+.heading{
+  font-family: Arial;
+  font-size: 20px;
+  margin: 8px;
+  margin-bottom: 15px;
+}
+.memberProfile{
+  height: 340px;
+  width: 295px;
+  margin: 20px;
+  display: inline-block;
+}
+
+  .memberPhoto{
+  height: 295px;
+  width: 295px;
+  margin-bottom: 15px;
+  }
+
+.nickname{
+  margin-bottom: 5px;
+  font-family: arial;
+  font-size: 15px;
+}
+
+.description{
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: arial;
+  font-size: 13px;
+}
+
 /* modal */
 
 /* footer */
