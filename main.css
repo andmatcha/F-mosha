@@ -5,6 +5,44 @@
 /* main */
 
 /* modal */
+.content {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.page-title {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.item {
+    flex-direction: row;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    display: flex;
+}
+
+.item-img {
+    width: 50%;
+}
+
+.item-img {
+    border-style: none;
+}
+
+.item-text {
+    
+}
 
 /* footer */
 .footer {
