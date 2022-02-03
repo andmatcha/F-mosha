@@ -2,14 +2,19 @@
 const PAGE_LENGTH = document.querySelectorAll('.js_page').length;
 
 function changeColor(pageNum) {
-    document.getElementById(`page${pageNum}_btn`).style.color = '';
-}
-
-function checkPage() {
     //一旦全てのボタンを黒くする
     document.querySelectorAll('.page_btns li').forEach(element => {
         element.style.color = '#000';
     });
+    if(pageNum <= 1) {
+        document.getElementById('prev_btn').style.color = '#aaa';
+    } else if(pageNum >= PAGE_LENGTH) {
+        document.getElementById('next_btn').style.color = '#aaa';
+    }
+    document.getElementById(`page${pageNum}_btn`).style.color = '#aaa';
+}
+
+function checkPage() {
     //現在のページを取得
     document.querySelectorAll('.js_page').forEach(element => {
         if (element.classList.contains('is_show')) {
@@ -26,19 +31,24 @@ function changePage(pageNum) {
 }
 
 function clickBtn(btn) {
-    document
+    checkPage();
     if (btn === 'prev') {
-        checkPage();
         if (nowPageNum <= 1) {
             return;
         }
         changePage(nowPageNum - 1);
     } else if (btn === 'next') {
-        checkPage();
         if (nowPageNum >= PAGE_LENGTH) {
             return;
         }
         changePage(nowPageNum + 1);
+    } else {
+        changePage(btn);
     }
-    changePage(btn);
+
+    checkPage();
+    changeColor(nowPageNum);
 }
+
+checkPage();
+changeColor(nowPageNum);
