@@ -4,6 +4,38 @@
 
 /* main */
 
+
+.page_btns {
+    display: flex;
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+.page_btn {
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 200%;
+    box-sizing: content-box;
+    border: #fff solid 1px;
+}
+
+.page_btn:hover {
+    border: #ccc solid 1px;
+}
+
+.js_page {
+    display: none;
+}
+
+.is_show {
+    display: block;
+}
+
 /* modal */
 
 /* footer */
