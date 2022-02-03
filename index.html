@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./destyle.css">
     <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
     <!-- header -->
 
@@ -15,14 +17,28 @@
 
     <!-- main -->
     <h1 class="heading">Member Introduction</h1>
-        <div class="content">
-            <img src="" alt="member photo">
-            <div class="introduction">
-                <p class="nickname"></p> 
-                <p class="zodiacSign"></p>
-            </div>
+    <div class="content">
+        <img src="" alt="member photo">
+        <div class="introduction">
+            <p class="nickname"></p>
+            <p class="zodiacSign"></p>
         </div>
-    
+    </div>
+
+
+    <!-- pagenation -->
+    <section id="page1" class="js_page is_show" data-page="1">
+        ここに１ページ目を追加
+    </section>
+    <section id="page2" class="js_page" data-page="2">
+        ここに２ページ目の内容を追加
+    </section>
+    <ul class="page_btns">
+        <li id="prev_btn" onclick="clickBtn('prev')" class="page_btn">＜</li>
+        <li id="page1_btn" onclick="clickBtn(1)" class="page_btn">1</li>
+        <li id="page2_btn" onclick="clickBtn(2)" class="page_btn">2</li>
+        <li id="next_btn" onclick="clickBtn('next')" class="page_btn">＞</li>
+    </ul>
 
     <!-- modal -->
 
@@ -37,7 +53,8 @@
             <div class="footer_copyright">©︎ POSSE2 Team-F</div>
         </div>
     </footer>
-    
+
     <script src="./main.js"></script>
 </body>
+
 </html>
