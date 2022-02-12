@@ -226,6 +226,67 @@ header {
 }
 
 /* modal */
+.content {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+
+
+.page-title {
+    font-size: 0.875rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.item {
+  margin         : auto;                 /* サンプル用 中央寄せ */
+  box-sizing     : border-box;           /* 罫線も含む長さ      */
+  background     : #fff;                 /* BOXの背景色         */
+  width          : 50rem;                /* BOXの幅             */
+  height         : 30rem;                /* BOXの高さ           */
+ /* ▼ FlexBoxの定義 */
+  display        : flex;                 /* FlexBox定義         */
+  flex-wrap      : wrap;                 /* 折り返し定義        */
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.item div {
+  box-sizing     : border-box;              
+  width          : 10rem;                 /* サンプルBOXの幅     */
+  height         : 10rem;                 /* サンプルBOXの幅     */
+  /* margin         : 2px;                  サンプルBOXの間     */
+
+  /* ▼ FlexBoxの各ボックス均等自動幅 */
+  flex-grow      : 1;                    /* 各BOXを均等に割当て */
+}
+
+.item-img {
+    text-align: left;
+    border-style: none;
+}
+
+.item-img img {
+  width: 24rem;
+  height: 20rem;
+}
+
+.item-text {
+    text-align: right;
+}
+
+.item-text p {
+width: 24rem;
+height: 20rem;
+}
 
 /* footer */
 .footer {
