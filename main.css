@@ -2,6 +2,22 @@ html {
     width: 100vw;
 }
 /* header */
+@media screen and (min-width: 481px){
+}
+
+@media screen and (max-width: 480px){
+  text{
+    float: none;
+  }
+  /* img{
+    width: 300px;
+  } */
+}
+
+img {
+  width: 100%;
+}
+
 
 /* menu */
 
