@@ -139,7 +139,7 @@ header {
 
 .memberPhoto{
   height: 295px;
-  width: 295px;
+  width: 100%;
   margin-bottom: 15px;
   }
 
@@ -159,9 +159,17 @@ header {
 
 @media screen and (max-width: 480px) {
   .content{
-    
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
   }
   
+  .ProfileList{
+  max-width: 100%;
+  margin: auto;
+  justify-content: center;
+  }
+
   .heading{
     font-family: Arial;
     font-size: 20px;
@@ -169,14 +177,13 @@ header {
     margin-bottom: 15px;
   }
   .memberProfile{
-    height: 340px;
-    width: 295px;
-    margin: 20px;
-    display: inline-block;
+    max-width: 100%;
   }
   
     .memberPhoto{
     width:100%;
+    text-align: center;
+    margin: auto;
   }
   
   .nickname{
