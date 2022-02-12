@@ -1,3 +1,6 @@
+html {
+    width: 100vw;
+}
 /* header */
 
 /* menu */
@@ -135,4 +138,15 @@
     font-weight: 200;
     width: 270px;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 0 10px;
+    font-size: .7em;
+  }
+
+  .footer_links {
+    width: 180px;
+  }
 }
