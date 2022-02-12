@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,39 @@
     <link rel="stylesheet" href="./destyle.css">
     <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
     <!-- header -->
+    <header>
+        <div class="header-logo-menu">
+        <div id="nav-drawer">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label id="nav-open" for="nav-input"><span></span></label>
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <nav id="nav-content">
+                <ul class="nav-menu">
+                    <li class="nav-menu1"><a href="https://posse-ap.com/">PRODUCT</a></li>
+                    <li class="nav-menu1"><a href="https://posse-ap.com/">ABOUT</a></li>
+                    <li class="nav-menu1"><a href="https://posse-ap.com/">COMPANY</a></li>
+                    <li class="nav-menu1"><a href="https://posse-ap.com/">CONTACT</a></li>
 
+                </ul>
+
+            </nav>
+        </div>
+        <div class="logo-area">POSSE2 Members</div>
+        </div>
+
+<!-- <header id="header" class="wrapper">
+    <h1 class="site-title">
+        <a href="index.html">
+            POSSE2 Members
+        </a>
+    </h1> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hamburger" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" /> -->
+<!-- 　　 </svg> -->
+</header>
     <!-- menu -->
 
     <!-- main -->
@@ -25,20 +56,37 @@
         </ul>
     </div>
 
+    <!-- pagenation -->
+    <section id="page1" class="js_page is_show" data-page="1">
+        ここに1ページ目の内容を追加
+    </section>
+    <section id="page2" class="js_page" data-page="2">
+        ここに2ページ目の内容を追加
+    </section>
+    <section id="page3" class="js_page" data-page="3">
+        ここに3ページ目の内容を追加
+    </section>
+    <ul class="page_btns">
+        <li id="prev_btn" onclick="clickBtn('prev')" class="page_btn">＜</li>
+        <li id="page1_btn" onclick="clickBtn(1)" class="page_btn">1</li>
+        <li id="page2_btn" onclick="clickBtn(2)" class="page_btn">2</li>
+        <li id="page3_btn" onclick="clickBtn(3)" class="page_btn">3</li>
+        <li id="next_btn" onclick="clickBtn('next')" class="page_btn">＞</li>
+    </ul>
+
     <!-- modal -->
 <main>
-<div class="content wrapper">
+<div id="modal" class="content wrapper">
     <h1 class="page-title">プロダクトタイトル</h1>
     <div id="item" class="item">
         <div class="item-img" class="item-img">
             <img  src="img/examplepic.jpg" alt="画像１">
         </div>
         <div class="item-text">
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
         </div>
     </div>
-    <a href="">Back To Products</a>
+    <a class="close" href="">Back To Products</a>
 </div>
 </main>
 
@@ -53,7 +101,8 @@
             <div class="footer_copyright">©︎ POSSE2 Team-F</div>
         </div>
     </footer>
-    
+
     <script src="./main.js"></script>
 </body>
+
 </html>
