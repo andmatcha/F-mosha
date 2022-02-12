@@ -4,7 +4,6 @@
 
 /* main */
 
-@media screen and (min-width: 481px) { 
 
 .content{
   margin: auto;
@@ -41,7 +40,7 @@
   font-family: arial;
   font-size: 13px;
 }
-}
+
 
 @media screen and (max-width: 480px) {
   .content{
@@ -62,7 +61,7 @@
   }
   
     .memberPhoto{
-    width:30%;
+    width:100%;
   }
   
   .nickname{
